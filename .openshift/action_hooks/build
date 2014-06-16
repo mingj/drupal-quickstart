@@ -49,6 +49,8 @@ then
     exit 7
   fi
 
+  echo "mingjie"
+  ls
   #
   # Link the /current symlink to the latest Drupal instance
   #
