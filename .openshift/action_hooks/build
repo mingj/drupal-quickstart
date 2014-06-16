@@ -38,12 +38,12 @@ then
 
   echo "Download and install the latest stable version of Drupal"
   echo
-  echo "mingjie"
+
   mkdir -p ${OPENSHIFT_DATA_DIR}downloads
   
   echo ${OPENSHIFT_DATA_DIR}downloads
   
-  
+  pwd
   
 #  if ! drush dl drupal --destination=${OPENSHIFT_DATA_DIR}downloads --yes
 #  then
@@ -56,9 +56,8 @@ then
   rm -rf drupal-7.28.tar.gz
   cd -
   
-  echo "mingjie1"
-  ls ${OPENSHIFT_DATA_DIR}downloads
-  #
+  pwd
+
   # Link the /current symlink to the latest Drupal instance
   #
   rm -f ${OPENSHIFT_DATA_DIR}downloads/current
@@ -93,6 +92,8 @@ then
   ln -sfn ../../sites $DRUPAL_INSTALL_DIR/sites
 fi
 
+echo "geiao"
+pwd
 #
 # Ensure that the app-root/runtime/repo/php PHP directory points
 # to a valid Drupal instance directory
