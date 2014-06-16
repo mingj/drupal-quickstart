@@ -45,11 +45,11 @@ then
   
   
   
-  #if ! drush dl drupal --destination=${OPENSHIFT_DATA_DIR}downloads --yes
-  #then
-  #  echo "ERROR: Unable download and install Drupal."
-  #  exit 7
-  #fi
+  if ! drush dl drupal --destination=${OPENSHIFT_DATA_DIR}downloads --yes
+  then
+    echo "ERROR: Unable download and install Drupal."
+    exit 7
+  fi
 
   echo "mingjie1"
   ls ${OPENSHIFT_DATA_DIR}downloads
