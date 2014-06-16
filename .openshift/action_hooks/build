@@ -50,7 +50,7 @@ then
   fi
 
   echo "mingjie"
-  ls
+  ls ${OPENSHIFT_DATA_DIR}downloads
   #
   # Link the /current symlink to the latest Drupal instance
   #
