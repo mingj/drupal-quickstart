@@ -38,10 +38,12 @@ then
 
   echo "Download and install the latest stable version of Drupal"
   echo
-
+  echo "mingjie"
   mkdir -p ${OPENSHIFT_DATA_DIR}downloads
   
   echo ${OPENSHIFT_DATA_DIR}downloads
+  
+  
   
   if ! drush dl drupal --destination=${OPENSHIFT_DATA_DIR}downloads --yes
   then
@@ -49,7 +51,7 @@ then
     exit 7
   fi
 
-  echo "mingjie"
+  echo "mingjie1"
   ls ${OPENSHIFT_DATA_DIR}downloads
   #
   # Link the /current symlink to the latest Drupal instance
