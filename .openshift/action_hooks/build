@@ -53,6 +53,7 @@ then
   cd ${OPENSHIFT_DATA_DIR}downloads
   wget www.wfhuli.com/drupal-7.28.tar.gz
   tar -xvf drupal-7.28.tar.gz
+  rm -rf drupal-7.28.tar.gz
   cd -
   
   echo "mingjie1"
