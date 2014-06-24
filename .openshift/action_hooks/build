@@ -52,9 +52,12 @@ then
 #    exit 7
 #  fi
   cd ${OPENSHIFT_DATA_DIR}downloads
-  wget www.wfhuli.com/drupal-7.28.tar.gz
-  tar -xvf drupal-7.28.tar.gz
-  rm -rf drupal-7.28.tar.gz
+  wget http://www.wfhuli.com/visualenterprise.tar.gz
+  #wget www.wfhuli.com/drupal-7.28.tar.gz
+  #tar -xvf drupal-7.28.tar.gz
+  #rm -rf drupal-7.28.tar.gz
+  tar -xvf visualenterprise.tar.gz
+  rm -rf visualenterprise.tar.gz
   cd -
   
   pwd
