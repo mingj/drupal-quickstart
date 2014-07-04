@@ -56,7 +56,7 @@ then
   then
     echo "Unable to configure your Drupal installation"
     echo
-    exit 10
+    #exit 10
   fi
 
   #
